@@ -8,6 +8,8 @@ const Section = styled.div`
   box-sizing: border-box;
   font-family: Darker Grotesque;
   position: relative;
+  /* overflow-x: hidden; */
+  /* overflow-y: none; */
 `;
 
 const TopSection = styled.div`
