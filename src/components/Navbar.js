@@ -6,6 +6,11 @@ const Section = styled.div`
   /* border: 1px solid red; */
   border-bottom: 2px solid #000;
   padding-left: 2vw;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  /* border-top: 2px solid #000; */
+  z-index: 100;
 `;
 
 const Menu = styled.div`
@@ -19,7 +24,7 @@ const MenuItems = styled.span`
   margin: 0rem 2rem 0 0;
   font-size: 1.4rem;
   font-family: Darker Grotesque;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   position: relative;
   
@@ -48,7 +53,7 @@ const Options = styled.div``;
 const Navbar = () => {
   return (
     <Section>
-      <Menu>
+    <Menu>
         <MenuItems>Features</MenuItems>
         <MenuItems>Pricing</MenuItems>
         <MenuItems>University</MenuItems>

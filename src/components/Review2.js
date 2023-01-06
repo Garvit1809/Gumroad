@@ -72,9 +72,22 @@ const BookImage = styled.div`
 
   img {
     width: 100%;
-    height: 100%
-  }
-`;
+    height: 100%;
+    
+}
+`
+
+const FreeImage = styled.div`
+position: absolute;
+top: -2.5rem;
+right: -3rem;
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+`
 
 const Review2 = () => {
   return (
@@ -94,6 +107,9 @@ const Review2 = () => {
           <BookImage>
             <img src={Book} alt="" />
           </BookImage>
+          <FreeImage>
+            <img src={Free} alt="" />
+          </FreeImage>
           <Chip name="trendsvc" />
         </ImageContainer>
       </RightContainer>
