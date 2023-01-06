@@ -4,8 +4,12 @@ import logo from '../assets/618ea7afd990103829d614ff_gumroad-logo.svg'
 import Explore from '../components/Explore'
 import Inspiration from '../components/Inspiration'
 import Navbar from '../components/Navbar'
+import Review1 from '../components/Review1'
+import Review2 from '../components/Review2'
 import Roadmap from '../components/Roadmap'
 import SellAnything from '../components/SellAnything'
+import SellAnywhere from '../components/SellAnywhere'
+import SellToAnyone from '../components/SellToAnyone'
 import StartSelling from '../components/StartSelling'
 import Suggestion from '../components/Suggestion'
 
@@ -35,6 +39,10 @@ const Home = () => {
     <Suggestion/>
     <Explore/>
     <SellAnything/>
+    <Review1/>
+    <SellToAnyone/>
+    <Review2/>
+    <SellAnywhere/>
     <Inspiration/>
     </>
   )

@@ -27,6 +27,8 @@ img{
 const RightContainer = styled.div`
 padding: 6.5vw;
 text-align: left;
+width: 50vw;
+box-sizing: border-box;
 
 h3{
     font-size: 3.5rem;
@@ -39,7 +41,7 @@ p{
     font-size: 1.8rem;
     line-height: 1.1;
     letter-spacing: -0.01em;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 2.5rem;
 }
 
@@ -50,7 +52,7 @@ li{
     /* border: 1px solid red; */
     margin-bottom: 0.4rem;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     display: flex;
     align-items: center;
     /* justify-content: center; */
