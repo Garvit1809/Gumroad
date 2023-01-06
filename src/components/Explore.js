@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Arrow } from "./SVG";
 
 const Section = styled.div`
   font-family: Darker Grotesque;
@@ -28,10 +29,21 @@ const Section = styled.div`
   }
 
   span {
+    /* border: 1px solid red; */
     font-size: 1.6rem;
     font-weight: 700;
     position: relative;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+
+    svg{
+      width: 1.2rem;
+      margin-left: 0.4rem;
+    }
 
     &::after {
       content: "";
@@ -67,7 +79,7 @@ const Explore = () => {
         or even understand how to start a business. You just gotta take what you
         know and sell it.
       </p>
-      <span>Explore Features -{">"}</span>
+      <span>Explore Features <Arrow/></span>
     </Section>
   );
 };
