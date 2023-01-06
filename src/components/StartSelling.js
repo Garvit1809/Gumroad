@@ -1,23 +1,25 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
+import img from "../assets/61942b84ec3d406199f07d78_vegalia.png";
 
 const Section = styled.div`
-/* border: 1px solid red; */
-display: flex;
-border-bottom: 2px solid #000;
-`
+  /* border: 1px solid red; */
+  display: flex;
+  border-bottom: 2px solid #000;
+`;
 
 const LeftContainer = styled.div`
-width: 50%;
-background-color: #ff90e8;
-padding-top: 4rem;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-/* border: 1px solid red; */
+  width: 50%;
+  background-color: #ff90e8;
+  border-right: 2px solid #000;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
 
-h1{
+  h1 {
     text-align: left;
     margin-top: 0px;
     margin-bottom: 3.5rem;
@@ -30,14 +32,14 @@ h1{
     font-family: Darker Grotesque;
     font-weight: 600;
     /* border: 1px solid red; */
-}
+  }
 
-span{
+  span {
     display: block;
     white-space: nowrap;
-}
+  }
 
-p{
+  p {
     font-size: 1.5rem;
     line-height: 1.3;
     width: 60%;
@@ -48,23 +50,53 @@ p{
     font-family: Darker Grotesque;
     font-weight: 600;
     /* border: 1px solid red; */
-}
-`
+  }
+`;
+
+const RightContainer = styled.div`
+  background-color: #ffc900;
+  color: #000;
+  display: flex;
+  align-items: center;
+justify-content: center;
+`;
+
+const ImageContainer = styled.div`
+width: 50vw;
+height: 80vh;
+border: 1px solid red;
+  img {
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    max-width: 36rem;
+    min-width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    display: flex;
+  }
+`;
 
 const StartSelling = () => {
   return (
     <Section>
-        <LeftContainer>
-            <h1>
-            Go from
-            <span>zero to $1</span>
-            </h1>
-            <p>
-            With Gumroad, anyone can earn their first dollar. Just start with what you know, see what stcks and get paid. Its that easy.
-            </p>
-        </LeftContainer>
+      <LeftContainer>
+        <h1>
+          Go from
+          <span>zero to $1</span>
+        </h1>
+        <p>
+          With Gumroad, anyone can earn their first dollar. Just start with what
+          you know, see what stcks and get paid. Its that easy.
+        </p>
+      </LeftContainer>
+      <RightContainer>
+        <ImageContainer>
+          <img src={img} alt="" />
+        </ImageContainer>
+      </RightContainer>
     </Section>
-  )
-}
+  );
+};
 
-export default StartSelling
+export default StartSelling;

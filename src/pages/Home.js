@@ -1,8 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from '../assets/618ea7afd990103829d614ff_gumroad-logo.svg'
+import Inspiration from '../components/Inspiration'
 import Navbar from '../components/Navbar'
+import Roadmap from '../components/Roadmap'
 import StartSelling from '../components/StartSelling'
+import Suggestion from '../components/Suggestion'
 
 const Section = styled.div`
 /* border: 1px solid black; */
@@ -25,6 +28,9 @@ const Home = () => {
     </Section>
     <Navbar/>
     <StartSelling/>
+    <Roadmap/>
+    <Suggestion/>
+    <Inspiration/>
     </>
   )
 }
