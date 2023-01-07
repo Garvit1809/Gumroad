@@ -58,7 +58,6 @@ left: 0rem;
 img{
     width: 80%;
 }
-/* transform: translateX(30%); */
 `
 
 const Income = () => {

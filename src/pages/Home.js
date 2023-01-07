@@ -32,7 +32,8 @@ const Section = styled.div`
   }
 `;
 const PlaygroundImage = styled.div`
-  img {
+border-bottom: 2px solid #000;
+  svg {
     display: block;
   }
 `;
