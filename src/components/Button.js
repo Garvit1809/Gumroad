@@ -8,8 +8,10 @@ const Section = styled.div`
   /* border: 2px solid blue; */
   width: fit-content;
   margin: 0 auto;
-
+  /* min-width: 18rem; */
+  
   div.black {
+      min-width: 18rem;
     font-family: Darker Grotesque;
     font-size: 5rem;
     font-weight: 600;
@@ -72,12 +74,17 @@ const Section = styled.div`
 
   &:hover {
     div.black {
-      transform: translate3d(-0.5rem, -0.5rem, 0px) scale3d(1, 1, 1)
+      transform: translate3d(-1.5rem, -1.5rem, 0px) scale3d(1, 1, 1)
+        rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+
+    div.yellow{
+        transform: translate3d(-1rem, -1rem, 0px) scale3d(1, 1, 1)
         rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     }
 
     div.red {
-      transform: translate3d(0.5rem, 0.5rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      transform: translate3d(-0.5rem, -0.5rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
         rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     }
   }

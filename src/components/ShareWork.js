@@ -14,7 +14,7 @@ h1{
   line-height: 100%;
   font-weight: 500;
   font-size: 5.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 `
 
