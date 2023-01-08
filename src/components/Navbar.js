@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Section = styled.div`
@@ -27,18 +28,18 @@ const MenuItems = styled.span`
   font-weight: 500;
   cursor: pointer;
   position: relative;
-  
+
   &::after {
-      content: "";
-      position: absolute;
-      left: 0%;
-      top: auto;
-      right: auto;
-      bottom: 0%;
-      width: 0%;
-      background-color: black;
-      height: 1px;
-      transition: all 0.15s linear;
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: auto;
+    bottom: 0%;
+    width: 0%;
+    background-color: black;
+    height: 1px;
+    transition: all 0.15s linear;
   }
 
   &:hover {
@@ -53,8 +54,10 @@ const Options = styled.div``;
 const Navbar = () => {
   return (
     <Section>
-    <Menu>
-        <MenuItems>Features</MenuItems>
+      <Menu>
+        <MenuItems>
+          <Link to="/features">Features</Link>
+        </MenuItems>
         <MenuItems>Pricing</MenuItems>
         <MenuItems>University</MenuItems>
         <MenuItems>Blog</MenuItems>
