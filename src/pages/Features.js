@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import CreateHome from "../components/featuresComp/CreateHome";
 import CreateMemberships from "../components/featuresComp/CreateMemberships";
 import Currencies from "../components/featuresComp/Currencies";

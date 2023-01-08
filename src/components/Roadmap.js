@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import man from '../assets/619dae6f49d8e947f1fe5e02_gum-head.json'
 import manAnimation from '../assets/manAnimation.svg'
 
 const Section = styled.div`
