@@ -47,15 +47,13 @@ const RightContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 4rem 0;
-
-  
 `;
 
 const ImageContainer = styled.div`
   /* border: 1px solid red; */
   position: relative;
 
-  img.profile {
+  img#profile {
     display: block;
     height: 90vh;
     width: 100%;
@@ -103,7 +101,7 @@ const Review2 = () => {
       </ReviewContainer>
       <RightContainer>
         <ImageContainer>
-          <img className="profile" src={trendsvc} alt="" />
+          <img id="profile" src={trendsvc} alt="" />
           <BookImage>
             <img src={Book} alt="" />
           </BookImage>

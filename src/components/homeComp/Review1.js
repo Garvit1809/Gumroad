@@ -35,7 +35,6 @@ const ReviewContainer = styled.div`
     text-align: left;
     /* border: 1px solid red; */
     width: 100%;
-
   }
 `;
 

@@ -8,10 +8,11 @@ const Section = styled.div`
   justify-content: space-between;
   background-color: #fff;
   width: fit-content;
-  /* padding: 1rem; */
   position: absolute;
-  bottom: 5rem;
-  right: 0;
+  bottom: ${props => props.bottom};
+  left: ${props => props.left};
+  right: ${props => props.right};
+  height: fit-content;
 
   border-width: 2px;
   border-style: solid;
@@ -26,13 +27,11 @@ const Section = styled.div`
 
   img {
     width: 2rem;
-    /* border: 1px solid red; */
     height: 2rem;
     margin-right: 0.3rem;
   }
 
   h4 {
-      /* border: 1px solid red; */
     font-family: Darker Grotesque;
     font-size: 1.25rem;
     margin-bottom: 0.25rem;
@@ -41,9 +40,9 @@ const Section = styled.div`
   }
 `;
 
-const Chip = ({ name }) => {
+const Chip = ({ name, bottom, left, right }) => {
   return (
-    <Section>
+    <Section bottom={bottom ? bottom : '5rem'} left={left ? left : 'auto'} right={right ? right : '0'} >
       <img src={GumroadG} alt="" />
       <h4>{name}</h4>
     </Section>

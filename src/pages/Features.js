@@ -6,6 +6,7 @@ import GetGoingFast from "../components/featuresComp/GetGoingFast";
 import GrowAudience from "../components/featuresComp/GrowAudience";
 import ProductFeatures from "../components/featuresComp/ProductFeatures";
 import ProductVersion from "../components/featuresComp/ProductVersion";
+import ReviewGallery from "../components/featuresComp/ReviewGallery";
 import YourStore from "../components/featuresComp/YourStore";
 import Footer from "../components/generalComp/Footer";
 import Navbar from "../components/generalComp/Navbar";
@@ -39,6 +40,7 @@ const Features = () => {
       <ProductFeatures />
       <YourStore {...custom} />
       <CreateHome />
+      <ReviewGallery/>
       <YourStore {...payment} />
       <CreateMemberships />
       <Currencies />
