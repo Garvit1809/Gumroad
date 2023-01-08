@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import CreateHome from "../components/featuresComp/CreateHome";
 import CreateMemberships from "../components/featuresComp/CreateMemberships";
+import Currencies from "../components/featuresComp/Currencies";
+import GetGoingFast from "../components/featuresComp/GetGoingFast";
+import GrowAudience from "../components/featuresComp/GrowAudience";
+import ProductVersion from "../components/featuresComp/ProductVersion";
 import YourStore from "../components/featuresComp/YourStore";
 import Footer from "../components/Footer";
 import ShareWork from "../components/ShareWork";
@@ -23,12 +27,16 @@ const Features = () => {
       Here’s how you can sell and get paid, fast."
       />
       <CreateMemberships/>
+      <Currencies/>
+      <ProductVersion/>
       <YourStore
         heading="Comprehensive Platform"
         title="From start to finesse"
         description="We’ve spent ten years building an end-to-end
       platform so you can start selling in seconds."
       />
+      <GetGoingFast/>
+      <GrowAudience/>
       <ShareWork />
       <Footer />
     </>

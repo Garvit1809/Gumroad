@@ -2,10 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.div`
-  /* z-index: 1; */
   position: relative;
   cursor: pointer;
-  /* border: 2px solid blue; */
   width: fit-content;
   margin: 0 auto;
   /* min-width: 18rem; */
@@ -13,9 +11,10 @@ const Section = styled.div`
   div.black {
       min-width: 18rem;
     font-family: Darker Grotesque;
-    font-size: 5rem;
+    font-size: 2rem;
     font-weight: 600;
-    padding: 1.1rem 5rem 1.2rem;
+    line-height: 1;
+    padding: 1.2rem 5rem 1.3rem;
     width: fit-content;
     text-decoration: none;
     z-index: 3;
@@ -24,7 +23,6 @@ const Section = styled.div`
     background-color: rgb(0, 0, 0);
     position: relative;
     color: rgb(255, 255, 255);
-    font-size: 1.5rem;
     text-align: center;
     transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
       rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);

@@ -7,6 +7,10 @@ text-align: left;
 margin: 0 auto;
 letter-spacing: -0.01em;
 margin-bottom: 3rem;
+
+&:last-child{
+    margin-bottom: 2rem;
+}
 /* border: 1px solid red; */
 
 h3{

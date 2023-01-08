@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Steps from './Steps';
-import membership from '../../assets/membership.svg'
+import productVersions from '../../assets/productVersions.svg'
 
 const Section = styled.div`
   border-bottom: 2px solid #000;
@@ -33,38 +33,39 @@ const ImageContainer = styled.div`
   background-color: #90a8ed;
 
   img{
-    width: 80%;
+    width: 70%;
   }
 `;
 
-const createHomeContent = [
-    {
-      title: "Create simple memberships",
-      desc: "Give customers access to a library of content for as long as they’re subscribed.",
-    },
-    {
-      title: "Set up sunscriptions",
-      desc: "Let customers pay over time—monthly, quarterly, biannually, yearly, and more.",
-    },
-    {
-      title: "The sky's the limit",
-      desc: 'Give your audience the chance to pay what they want for your product.'
-    },
-];
 
-const CreateMemberships = () => {
+const versionsContent = [
+    {
+        title: 'Generate license keys',
+        desc: 'Selling software? We can create your license keys, so you can get back to beta.'
+    },
+    {
+        title: 'Sell multiple versions',
+        desc: 'Allow buyers to pick from PDF, ePub, and Mobi. Even charge more for lossless audio.'
+    },
+    {
+        title: 'Protect your work',
+        desc: 'We can create lightweight DRM to help keep customers honest.'
+    },
+]
+
+const ProductVersion = () => {
   return (
     <Section>
       <ContentBox>
-        {createHomeContent.map((step) => {
+        {versionsContent.map((step) => {
           return <Steps title={step.title} desc={step.desc} />;
         })}
       </ContentBox>
       <ImageContainer>
-        <img src={membership} alt="" />
+        <img src={productVersions} alt="" />
       </ImageContainer>
     </Section>
   )
 }
 
-export default CreateMemberships
+export default ProductVersion
