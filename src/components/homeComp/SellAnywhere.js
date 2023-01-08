@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Follow from "../assets/Follow.svg";
+import sellImg from "../../assets/SellAnywhere.svg";
 
 const Section = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ const Section = styled.div`
 
 const ImageContainer = styled.div`
   width: 50%;
-  background-color: #000;
+  background-color: rgb(255, 201, 0);
   border-right: 2px solid #000;
   min-height: 22rem;
   padding: 6.5vw;
@@ -43,23 +43,23 @@ const RightContainer = styled.div`
   }
 `;
 
-const SellToAnyone = () => {
+const SellAnywhere = () => {
   return (
     <Section>
       <ImageContainer>
-        <img src={Follow} alt="" />
+        <img src={sellImg} alt="" />
       </ImageContainer>
       <RightContainer>
-        <h3>Sell To Anyone</h3>
+        <h3>Sell Anywhere</h3>
         <div>
-          Build a loyal following with simple posts, email newsletters, and
-          automated workflows. Plus let your customers pay what they want or
-          choose between one-time, recurring, or fixed-length payments in your
-          currency of choice. (We’ll handle the fine print, like VAT)
+          Create and customize your storefront with our all-in-one platform or
+          choose to use your personal site instead. With Zapier, you can
+          seamlessly connect your Gumroad account to thousands of apps in your
+          current stack.
         </div>
       </RightContainer>
     </Section>
   );
 };
 
-export default SellToAnyone;
+export default SellAnywhere;

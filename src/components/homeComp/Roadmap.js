@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import manAnimation from '../assets/manAnimation.svg'
+import manAnimation from '../../assets/manAnimation.svg'
 
 const Section = styled.div`
   border: 1px solid red;

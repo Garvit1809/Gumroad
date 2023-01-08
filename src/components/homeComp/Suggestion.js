@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import img1 from "../assets/SmallBets.svg";
-import img2 from "../assets/SellBlog.svg";
-import Exciting from "../assets/Exciting.svg";
+import img1 from "../../assets/SmallBets.svg";
+import img2 from "../../assets/SellBlog.svg";
+import Exciting from "../../assets/Exciting.svg";
 
 const Section = styled.div`
   box-sizing: border-box;

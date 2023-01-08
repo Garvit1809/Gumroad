@@ -1,21 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "../assets/618ea7afd990103829d614ff_gumroad-logo.svg";
-import Explore from "../components/Explore";
-import Footer from "../components/Footer";
-import Income from "../components/Income";
-import Inspiration from "../components/Inspiration";
-import Navbar from "../components/Navbar";
-import Review1 from "../components/Review1";
-import Review2 from "../components/Review2";
-import Roadmap from "../components/Roadmap";
-import SellAnything from "../components/SellAnything";
-import SellAnywhere from "../components/SellAnywhere";
-import SellToAnyone from "../components/SellToAnyone";
-import ShareWork from "../components/ShareWork";
-import StartSelling from "../components/StartSelling";
-import Suggestion from "../components/Suggestion";
-import { Playground } from "../components/SVG";
+import Explore from "../components/homeComp/Explore";
+import Footer from "../components/generalComp/Footer";
+import Income from "../components/homeComp/Income";
+import Inspiration from "../components/homeComp/Inspiration";
+import Navbar from "../components/generalComp/Navbar";
+import Review1 from "../components/homeComp/Review1";
+import Review2 from "../components/homeComp/Review2";
+import Roadmap from "../components/homeComp/Roadmap";
+import SellAnything from "../components/homeComp/SellAnything";
+import SellAnywhere from "../components/homeComp/SellAnywhere";
+import SellToAnyone from "../components/homeComp/SellToAnyone";
+import ShareWork from "../components/generalComp/ShareWork";
+import StartSelling from "../components/homeComp/StartSelling";
+import Suggestion from "../components/homeComp/Suggestion";
+import { Playground } from "../components/generalComp/SVG";
 
 const Section = styled.div`
   /* border: 1px solid black; */

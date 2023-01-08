@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Chip from "./Chip";
-import Book from "../assets/Book.svg";
-import trendsvc from "../assets/trendsvc.png";
-import Free from "../assets/Free.svg";
+import Chip from "../generalComp/Chip";
+import Book from "../../assets/Book.svg";
+import trendsvc from "../../assets/trendsvc.png";
+import Free from "../../assets/Free.svg";
 
 const Section = styled.div`
   background-color: rgb(35, 160, 148);;

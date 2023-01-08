@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img from "../assets/61942b84ec3d406199f07d78_vegalia.png";
+import img from "../../assets/61942b84ec3d406199f07d78_vegalia.png";
 
 const Section = styled.div`
   /* border: 1px solid red; */

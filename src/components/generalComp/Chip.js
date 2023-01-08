@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import GumroadG from "../assets/GumroadG.svg";
+import GumroadG from "../../assets/GumroadG.svg";
 
 const Section = styled.div`
   display: flex;

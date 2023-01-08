@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import maxImg from "../assets/Maxulli.png";
-import Pen from "../assets/Pen.svg";
-import Chip from "./Chip";
+import maxImg from "../../assets/Maxulli.png";
+import Pen from "../../assets/Pen.svg";
+import Chip from "../generalComp/Chip";
 
 const Section = styled.div`
   background-color: #ff90e8;

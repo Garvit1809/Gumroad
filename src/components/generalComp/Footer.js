@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Arrow, Facebook, Instagram, Pinterest, Twitter, Youtube } from "./SVG";
-import GumroadG from "../assets/GumroadG.svg";
+import { Arrow, Facebook, Instagram, Pinterest, Twitter, Youtube } from "../generalComp/SVG";
+import GumroadG from "../../assets/GumroadG.svg";
 
 const Section = styled.div`
   background-color: #000;

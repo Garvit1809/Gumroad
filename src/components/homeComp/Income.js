@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import coin1 from '../coins/coin1.svg'
-import coin2 from '../coins/coin2.svg'
-import coin3 from '../coins/coin3.svg'
-import coin4 from '../coins/coin4.svg'
-import coin5 from '../coins/coin5.svg'
+import coin1 from '../../coins/coin1.svg'
+import coin2 from '../../coins/coin2.svg'
+import coin3 from '../../coins/coin3.svg'
+import coin4 from '../../coins/coin4.svg'
+import coin5 from '../../coins/coin5.svg'
 
 const Section = styled.div`
 padding: 5rem 0 6rem;

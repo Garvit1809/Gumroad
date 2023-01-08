@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import sellImg from '../assets/SellAnything.svg'
-import { Arrow } from './SVG'
+import sellImg from '../../assets/SellAnything.svg'
+import { Arrow } from '../generalComp/SVG'
 
 
 const Section = styled.div`
