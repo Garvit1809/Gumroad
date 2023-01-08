@@ -29,7 +29,7 @@ const Section = styled.div`
 
 const YourStore = ({ heading, title, description }) => {
   return (
-    <Section className="feature-intro" >
+    <Section className="intro" >
       <h4>{heading}</h4>
       <h1>{title}</h1>
       <p>{description}</p>

@@ -14,7 +14,7 @@ const Section = styled.div`
   padding: 5rem 0 6.5rem;
   position: relative;
 
-  div.feature-intro {
+  div.intro {
     &:first-child {
       border-bottom: none;
       padding: 0;

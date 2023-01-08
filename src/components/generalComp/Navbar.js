@@ -58,7 +58,11 @@ const Navbar = () => {
         <MenuItems>
           <Link to="/features">Features</Link>
         </MenuItems>
-        <MenuItems>Pricing</MenuItems>
+        <MenuItems>
+        <Link to="/pricing" >
+        Pricing
+        </Link>
+        </MenuItems>
         <MenuItems>University</MenuItems>
         <MenuItems>Blog</MenuItems>
         <MenuItems>Discover</MenuItems>
