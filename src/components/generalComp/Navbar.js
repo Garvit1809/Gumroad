@@ -63,7 +63,11 @@ const Navbar = () => {
         Pricing
         </Link>
         </MenuItems>
-        <MenuItems>University</MenuItems>
+        <MenuItems>
+        <Link to="/university" >
+        University
+        </Link>
+        </MenuItems>
         <MenuItems>Blog</MenuItems>
         <MenuItems>Discover</MenuItems>
       </Menu>

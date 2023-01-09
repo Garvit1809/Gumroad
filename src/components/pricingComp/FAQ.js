@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Plus from "./Plus.svg";
-import {FAQData} from './FAQData'
+import { FAQData } from "./FAQData";
 
 const Section = styled.div`
   padding: 5rem 0;
@@ -23,26 +23,64 @@ const Header = styled.div`
   }
 `;
 
+const Questions = styled.div`
+  border: 1px solid red;
+  width: 92.5%;
+  margin: 0 auto;
+`;
+
 const QuestionContainer = styled.div`
   border-top: 2px solid #000;
 `;
 
-const SVGContainer = styled.div`
-
+const Horizontal = styled.div`
+  /* border: 1px solid red; */
+  border: 1px solid red;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+  
+  img {
+      display: block;
+    }
 `;
+const Vertical = styled.div`
+  /* border: 1px solid red; */
+  border: 1px solid blue;
+  position: absolute;
+  z-index: 1;
 
-const Questions = styled.div`
-border: 1px solid red;
-width: 92.5%;
-margin: 0 auto;
+
+  img {
+    display: block;
+    /* transform: rotateZ(90deg); */
+    transform: ${props => props.collapse ? 'rotateZ(90deg)' : null};
+  }
 `;
 
 const Question = styled.div`
+  display: flex;
+  border: 1px solid blue;
+  cursor: pointer;
 `;
 
 const Answer = styled.div``;
 
 const FAQ = () => {
+    const [showAnswer, setShowAnswer] = useState(100)
+
+    const collapseAnswer = (index) => {
+        console.log(index);
+        if (index === showAnswer) {
+            setShowAnswer(-1)
+        } else {
+            setShowAnswer(index)
+        }
+    }
+    useEffect(() => {
+      console.log(showAnswer);
+    }, [showAnswer])
+    
   return (
     <Section>
       <Header>
@@ -50,21 +88,26 @@ const FAQ = () => {
         <p>Don't see your question? Visit our help center.</p>
       </Header>
       <Questions>
-        {FAQData.map((faq) => {
+        {FAQData.map((faq,index) => {
           return (
-            <QuestionContainer>
-              <Question>
-                <SVGContainer>
+            <QuestionContainer >
+              <Question onClick={() => collapseAnswer(index)} >
+                <Horizontal>
                   <img src={Plus} alt="" />
+                </Horizontal>
+                <Vertical collapse={index === showAnswer} >
                   <img src={Plus} alt="" />
-                </SVGContainer>
+                </Vertical>
                 <h2>{faq.ques}</h2>
               </Question>
-              <Answer>
+              {
+                index === showAnswer ?
+                <Answer>
                 <p>{faq.boolean ? "Yes!" : null}</p>
                 <p>{faq.ans}</p>
                 <span>{faq.link}</span>
-              </Answer>
+                </Answer> : null
+            }
             </QuestionContainer>
           );
         })}

@@ -23,13 +23,13 @@ const ReviewContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  h2{
+  h2 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 2.5rem;
   }
 
-  h4{
+  h4 {
     font-size: 1.5rem;
     font-weight: 700;
     text-align: left;
@@ -76,11 +76,12 @@ const Review1 = () => {
     <Section>
       <ReviewContainer>
         <h2>
-        “I launched MaxPacks as an experimental side gig; but within 2 years those Procreate brushes were earning more than my 6-figure salary in CG. Leaving in favor of Gumroad enabled me to explore other aspects of my art, develop new hobbies, and finally prioritize my personal life.”
+          “I launched MaxPacks as an experimental side gig; but within 2 years
+          those Procreate brushes were earning more than my 6-figure salary in
+          CG. Leaving in favor of Gumroad enabled me to explore other aspects of
+          my art, develop new hobbies, and finally prioritize my personal life.”
         </h2>
-        <h4>
-        Max Ulichney sells Procreate Brush Packs
-        </h4>
+        <h4>Max Ulichney sells Procreate Brush Packs</h4>
       </ReviewContainer>
       <RightContainer>
         <ImageContainer>
@@ -88,7 +89,7 @@ const Review1 = () => {
           <PenImage>
             <img src={Pen} alt="" />
           </PenImage>
-          <Chip name="maxulichney"/>
+          <Chip name="maxulichney" />
         </ImageContainer>
       </RightContainer>
     </Section>
