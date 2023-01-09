@@ -47,7 +47,7 @@ const RightContainer = styled.div`
   justify-content: center;
   padding: 4rem 0;
 
-  img {
+  img.max-img {
     display: block;
     height: 80vh;
   }
@@ -84,7 +84,7 @@ const Review1 = () => {
       </ReviewContainer>
       <RightContainer>
         <ImageContainer>
-          <img src={maxImg} alt="" />
+          <img className="max-img" src={maxImg} alt="" />
           <PenImage>
             <img src={Pen} alt="" />
           </PenImage>
