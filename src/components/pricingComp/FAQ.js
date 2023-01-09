@@ -1,37 +1,74 @@
 import React from "react";
 import styled from "styled-components";
+import Plus from "./Plus.svg";
+import {FAQData} from './FAQData'
 
 const Section = styled.div`
-h1{
-    color: #333;
-}
+  padding: 5rem 0;
+  border-bottom: 2px solid #000;
 `;
 
-const FAQData = [
-    {
-        ques: 'What Can I Sell on Gumroad?',
-        ans: 'Digital Products, Physical Products and Memberships - almost anything! Creators in just about every industry use (and love) Gumroad, from digital artists, writers, musicians and other creative-types to business-minded entrepreneurs and tech gurus like our SaaS creators. A better question is, “what can’t you sell on Gumroad?”'
-    },
-    {
-        ques: 'How Do I Get Paid?',
-        ans: 'Gumroad’s goal is to help creators make a living doing what they love, so we make it as simple as possible to get paid. How we pay creators, whether through direct deposit or PayPal, varies by country.'
-    },
-    {
-        ques: 'What Are The Fees?',
-        ans: 'Unlike other platforms, Gumroad doesn’t charge you a monthly fee. Instead, our fees are deducted as a small percentage of every sale, so we only make money when you do.'
-    },
-    {
-        ques: 'Can I Use Gumroad for Memberships?',
-        ans: 'Yes! Whether it’s for a podcast, online course, or SaaS subscriptions, Gumroad makes it easy to manage memberships.'
-    }
-]
+const Header = styled.div`
+  h1 {
+    /* color: #333; */
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+  }
+`;
+
+const QuestionContainer = styled.div`
+  border-top: 2px solid #000;
+`;
+
+const SVGContainer = styled.div`
+
+`;
+
+const Questions = styled.div`
+border: 1px solid red;
+width: 92.5%;
+margin: 0 auto;
+`;
+
+const Question = styled.div`
+`;
+
+const Answer = styled.div``;
 
 const FAQ = () => {
   return (
     <Section>
-      <h1>Frequently asked questions</h1>
-      <p>Don't see your question? Visit our help center.</p>
-
+      <Header>
+        <h1>Frequently asked questions</h1>
+        <p>Don't see your question? Visit our help center.</p>
+      </Header>
+      <Questions>
+        {FAQData.map((faq) => {
+          return (
+            <QuestionContainer>
+              <Question>
+                <SVGContainer>
+                  <img src={Plus} alt="" />
+                  <img src={Plus} alt="" />
+                </SVGContainer>
+                <h2>{faq.ques}</h2>
+              </Question>
+              <Answer>
+                <p>{faq.boolean ? "Yes!" : null}</p>
+                <p>{faq.ans}</p>
+                <span>{faq.link}</span>
+              </Answer>
+            </QuestionContainer>
+          );
+        })}
+      </Questions>
     </Section>
   );
 };
