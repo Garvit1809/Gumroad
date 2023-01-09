@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import YourStore from '../featuresComp/YourStore'
 
 const Section = styled.div`
 background-color: #23a094;

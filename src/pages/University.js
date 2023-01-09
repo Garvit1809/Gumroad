@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import Footer from '../components/generalComp/Footer'
 import Navbar from '../components/generalComp/Navbar'
 import ShareWork from '../components/generalComp/ShareWork'
