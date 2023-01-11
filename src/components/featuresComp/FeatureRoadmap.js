@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 import brush from "../../featuresImages/brush.svg";
 import cursor from "../../featuresImages/cursor.svg";
 import pen from "../../assets/Pen.svg";
@@ -68,7 +68,6 @@ const LoopText = styled.div`
   /* border: 1px solid blue; */
 `;
 
-
 const ArrowImg = styled.div`
   /* border: 1px solid red; */
   position: absolute;
@@ -102,7 +101,6 @@ const BottomArrowImg = styled.div`
   right: -10px;
 
   img {
-    /* transform: rotateZ(180deg); */
     width: 1rem;
   }
 `;
@@ -110,48 +108,48 @@ const BottomArrowImg = styled.div`
 const FeatureRoadmap = () => {
   return (
     <Section>
-    <InnerLoop>
-    <img src={brush} alt="" />
-    <img src={cursor} alt="" />
-    <img src={pen} alt="" />
-    <img src={game} alt="" />
-    <TopRow>
-      <LoopText>
-        Open Account
-        <ArrowImg>
-          <img src={arrow} alt="" />
-        </ArrowImg>
-      </LoopText>
-      <LoopText>
-        Add Product
-        <ArrowImg>
-          <img src={arrow} alt="" />
-        </ArrowImg>
-      </LoopText>
-      <LoopText>
-        Start Selling
-        <ArrowImg>
-          <img src={arrow} alt="" />
-        </ArrowImg>
-      </LoopText>
-    </TopRow>
-    <BottomRow>
-      <LoopText>
-        Repeat
-        <BottomArrowImg>
-          <img src={arrow} alt="" />
-        </BottomArrowImg>
-      </LoopText>
-      <LoopText>
-        Get Paid
-        <BottomArrowImg>
-          <img src={arrow} alt="" />
-        </BottomArrowImg>
-      </LoopText>
-    </BottomRow>
-  </InnerLoop>
+      <InnerLoop>
+        <img src={brush} alt="" />
+        <img src={cursor} alt="" />
+        <img src={pen} alt="" />
+        <img src={game} alt="" />
+        <TopRow>
+          <LoopText>
+            Open Account
+            <ArrowImg>
+              <img src={arrow} alt="" />
+            </ArrowImg>
+          </LoopText>
+          <LoopText>
+            Add Product
+            <ArrowImg>
+              <img src={arrow} alt="" />
+            </ArrowImg>
+          </LoopText>
+          <LoopText>
+            Start Selling
+            <ArrowImg>
+              <img src={arrow} alt="" />
+            </ArrowImg>
+          </LoopText>
+        </TopRow>
+        <BottomRow>
+          <LoopText>
+            Repeat
+            <BottomArrowImg>
+              <img src={arrow} alt="" />
+            </BottomArrowImg>
+          </LoopText>
+          <LoopText>
+            Get Paid
+            <BottomArrowImg>
+              <img src={arrow} alt="" />
+            </BottomArrowImg>
+          </LoopText>
+        </BottomRow>
+      </InnerLoop>
     </Section>
-  )
-}
+  );
+};
 
-export default FeatureRoadmap
+export default FeatureRoadmap;

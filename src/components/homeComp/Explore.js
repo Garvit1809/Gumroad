@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Arrow } from "../generalComp/SVG";
+import arrow from "../../assets/ArrowSvg.svg";
 
 const Section = styled.div`
   font-family: Darker Grotesque;
@@ -30,7 +30,7 @@ const Section = styled.div`
 
   span {
     /* border: 1px solid red; */
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 700;
     position: relative;
     cursor: pointer;
@@ -40,9 +40,12 @@ const Section = styled.div`
     justify-content: center;
     margin: 0 auto;
 
-    svg{
-      width: 1.2rem;
-      margin-left: 0.4rem;
+    img {
+      margin-left: 0.35rem;
+      padding-top: 0.6rem;
+      padding-bottom: 0.1rem;
+      width: 1.4rem;
+      /* border: 1px solid red; */
     }
 
     &::after {
@@ -59,11 +62,11 @@ const Section = styled.div`
       height: 1px;
       transition: all 0.15s linear;
     }
-    
+
     &:hover {
-        &::after {
-            width: 100%;
-            height: 2px;
+      &::after {
+        width: 100%;
+        height: 2px;
       }
     }
   }
@@ -79,7 +82,10 @@ const Explore = () => {
         or even understand how to start a business. You just gotta take what you
         know and sell it.
       </p>
-      <span>Explore Features <Arrow/></span>
+      <span>
+        Explore Features
+        <img src={arrow} alt="" />
+      </span>
     </Section>
   );
 };

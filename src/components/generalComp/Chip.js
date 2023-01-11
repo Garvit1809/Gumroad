@@ -24,11 +24,19 @@ const Section = styled.div`
   transition: box-shadow 200ms ease-in-out 0s, transform 200ms ease-in-out 0s,
     -webkit-transform 200ms ease-in-out 0s;
   padding: 0.5rem 0.7rem 0.5rem 0.5rem;
+  cursor: pointer;
+
+  &:hover{
+    box-shadow: 3px 3px 0 0 #000;
+    -webkit-transform: translate(-4px, -4px);
+    -ms-transform: translate(-4px, -4px);
+    transform: translate(-4px, -4px);
+  }
 
   img {
     width: 2rem;
     height: 2rem;
-    margin-right: 0.3rem;
+    margin-right: 0.5rem;
   }
 
   h4 {

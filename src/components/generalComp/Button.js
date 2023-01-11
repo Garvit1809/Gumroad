@@ -6,7 +6,6 @@ const Section = styled.div`
   cursor: pointer;
   width: fit-content;
   margin: 0 auto;
-  /* min-width: 18rem; */
   
   div.black {
       min-width: 18rem;

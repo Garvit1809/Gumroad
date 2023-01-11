@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import sellImg from '../../assets/SellAnything.svg'
-import { Arrow } from '../generalComp/SVG'
-
+import arrow from "../../assets/ArrowSvg.svg";
 
 const Section = styled.div`
 display: flex;
@@ -57,9 +56,10 @@ li{
     align-items: center;
     /* justify-content: center; */
 
-    svg{
-        margin-top: 0.1rem;
+    img{
+        margin-top: 0.3rem;
         width: 1.2rem;
+        /* border: 1px solid red; */
         margin-right: 0.5rem;
     }
 }
@@ -77,13 +77,13 @@ const SellAnything = () => {
         Video lessons. Monthly subscriptions. Physical products. Whatever! Gumroad was created to help you experiment with all kinds of ideas and formats.
         </p>
         <ul>
-        <li><Arrow/>Sell your Top 10 lists</li>
-        <li><Arrow/>Sell your crypto tips</li>
-        <li><Arrow/>Sell your fractal pack</li>
-        <li><Arrow/>Sell your keto cookbook</li>
-        <li><Arrow/>Sell your C4D scenes</li>
-        <li><Arrow/>Sell your new emojis</li>
-        <li><Arrow/>Seriously, sell anything!</li>
+        <li><img src={arrow} alt="" />Sell your Top 10 lists</li>
+        <li><img src={arrow} alt="" /> Sell your crypto tips</li>
+        <li><img src={arrow} alt="" /> Sell your fractal pack</li>
+        <li><img src={arrow} alt="" /> Sell your keto cookbook</li>
+        <li><img src={arrow} alt="" /> Sell your C4D scenes</li>
+        <li><img src={arrow} alt="" /> Sell your new emojis</li>
+        <li><img src={arrow} alt="" /> Seriously, sell anything!</li>
         </ul>
         </RightContainer>
     </Section>
