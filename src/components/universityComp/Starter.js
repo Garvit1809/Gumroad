@@ -4,7 +4,7 @@ import beginner1 from '../../assets/university/beginner1.svg'
 import beginner2 from '../../assets/university/beginner2.png'
 import beginner3 from '../../assets/university/beginner3.png'
 import beginner4 from '../../assets/university/beginner4.svg'
-import Resource from "./Resource";
+import Resource from "../pricingComp/Resource";
 
 const Section = styled.div`
   h1 {

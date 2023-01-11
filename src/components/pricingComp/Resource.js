@@ -8,6 +8,7 @@ const Section = styled.div`
   border-radius: 0.375rem;
   margin-bottom: 2rem;
   margin-right: 2.5rem;
+  overflow: hidden;
   transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out,
     -webkit-transform 200ms ease-in-out;
 

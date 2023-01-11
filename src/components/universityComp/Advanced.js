@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Resource from "./Resource";
+import Resource from "../pricingComp/Resource";
 import advanced1 from '../../assets/university/advanced1.svg'
 import advanced2 from '../../assets/university/advanced2.svg'
 import advanced3 from '../../assets/university/advanced3.png'
