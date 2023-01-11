@@ -6,7 +6,7 @@ import trendsvc from "../../assets/trendsvc.png";
 import Free from "../../assets/Free.svg";
 
 const Section = styled.div`
-  background-color: rgb(35, 160, 148);;
+  background-color: rgb(35, 160, 148);
   border-bottom: 2px solid #000;
   display: flex;
   font-family: Darker Grotesque;
@@ -25,9 +25,10 @@ const ReviewContainer = styled.div`
   justify-content: center;
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 600;
     margin-bottom: 2.5rem;
+    line-height: 1.15;
   }
 
   h4 {
@@ -71,21 +72,19 @@ const BookImage = styled.div`
   img {
     width: 100%;
     height: 100%;
-    
-}
-`
+  }
+`;
 
 const FreeImage = styled.div`
-position: absolute;
-top: -2.5rem;
-right: -3rem;
+  position: absolute;
+  top: -2.5rem;
+  right: -3rem;
 
-
-img{
+  img {
     width: 100%;
     height: 100%;
-}
-`
+  }
+`;
 
 const Review2 = () => {
   return (

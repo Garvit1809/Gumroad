@@ -24,9 +24,10 @@ const ReviewContainer = styled.div`
   justify-content: center;
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 600;
     margin-bottom: 2.5rem;
+    line-height: 1.15;
   }
 
   h4 {

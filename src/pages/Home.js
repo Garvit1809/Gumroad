@@ -16,6 +16,7 @@ import ShareWork from "../components/generalComp/ShareWork";
 import StartSelling from "../components/homeComp/StartSelling";
 import Suggestion from "../components/homeComp/Suggestion";
 import { Playground } from "../components/generalComp/SVG";
+import Review3 from "../components/homeComp/Review3";
 
 const Section = styled.div`
   /* border: 1px solid black; */
@@ -32,7 +33,7 @@ const Section = styled.div`
   }
 `;
 const PlaygroundImage = styled.div`
-border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000;
   svg {
     display: block;
   }
@@ -55,12 +56,13 @@ const Home = () => {
       <Review2 />
       <SellAnywhere />
       <Inspiration />
-      <Income/>
+      <Review3 />
+      <Income />
       <PlaygroundImage>
         <Playground />
       </PlaygroundImage>
-      <ShareWork/>
-      <Footer/>
+      <ShareWork />
+      <Footer />
     </>
   );
 };
