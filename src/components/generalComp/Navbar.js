@@ -59,16 +59,14 @@ const Navbar = () => {
           <Link to="/features">Features</Link>
         </MenuItems>
         <MenuItems>
-        <Link to="/pricing" >
-        Pricing
-        </Link>
+          <Link to="/pricing">Pricing</Link>
         </MenuItems>
         <MenuItems>
-        <Link to="/university" >
-        University
-        </Link>
+          <Link to="/university">University</Link>
         </MenuItems>
-        <MenuItems>Blog</MenuItems>
+        <MenuItems>
+          <Link to="/blog">Blog</Link>
+        </MenuItems>
         <MenuItems>Discover</MenuItems>
       </Menu>
       <Options></Options>

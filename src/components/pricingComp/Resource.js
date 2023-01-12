@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import arrow from '../../assets/ArrowSvg.svg'
 
 const Section = styled.div`
   width: 28.13vw;
   /* width: 100%; */
   border: 2px solid #000;
   border-radius: 0.375rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   margin-right: 2.5rem;
   overflow: hidden;
   transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out,
@@ -45,14 +46,24 @@ const Content = styled.div`
 
   div {
     margin-bottom: 1.2rem;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 1.1;
   }
 
   strong {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+
+    img{
+      /* border: 1px solid red; */
+      width: 1.2rem;
+      margin-top: 0.5rem;
+      margin-left: 0.3rem;
+    }
   }
 `;
 
@@ -67,7 +78,7 @@ const Resource = ({ img, guide, desc }) => {
           <h3>{guide}</h3>
           <div>{desc}</div>
         </header>
-        <strong>Read more</strong>
+        <strong>Read more <img src={arrow} alt="" /> </strong>
       </Content>
     </Section>
   );
