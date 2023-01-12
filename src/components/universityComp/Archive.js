@@ -3,6 +3,7 @@ import styled from "styled-components";
 import archive1 from "../../assets/university/archive1.svg";
 import archive2 from "../../assets/university/archive2.svg";
 import archive3 from "../../assets/university/archive3.svg";
+import arrow from '../../assets/ArrowSvg.svg'
 
 const Section = styled.div`
   border-bottom: 2px solid #000;
@@ -49,16 +50,15 @@ const ClappingImg = styled.div`
   `;
 
 const RightContainer = styled.div`
+  /* border: 1px solid red; */
   width: 50%;
   margin-right: 2rem;
-  /* border: 1px solid red; */
   
   h2 {
     font-size: 3.75rem;
     font-weight: 500;
     text-align: center;
     margin: 0;
-    /* font-size: 3rem; */
     line-height: 1;
     letter-spacing: -0.01em;
     margin-bottom: 3rem;
@@ -66,14 +66,42 @@ const RightContainer = styled.div`
   
   div {
     /* border: 1px solid red; */
+    width: fit-content;
+    margin: 0 auto;
     display: flex;
     font-size: 1.6rem;
     font-weight: 700;
     align-items: center;
     justify-content: center;
     line-height: 1;
-    /* margin: 0 auto; */
+    position: relative;
+    cursor: pointer;
 
+    &::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: auto;
+    bottom: 0%;
+    width: 0%;
+    background-color: black;
+    height: 2px;
+    transition: all 0.15s linear;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+
+    img{
+      /* border: 1px solid red; */
+      margin-top: 0.35rem;
+      margin-left: 0.3rem;
+      width: 1.2rem;
+    }
   }
 `;
 
@@ -93,7 +121,7 @@ const Archive = () => {
       </ImageContainer>
       <RightContainer>
         <h2>Check out inspiring creator stories in our archive.</h2>
-        <div>Download Archive</div>
+        <div><span>Download Archive</span><img src={arrow} alt="" /></div>
       </RightContainer>
     </Section>
   );

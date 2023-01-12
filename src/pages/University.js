@@ -10,6 +10,7 @@ import Review from '../components/universityComp/Review'
 import Starter from '../components/universityComp/Starter'
 import Learn from '../components/universityComp/Learn'
 import GumroadCreators from '../components/universityComp/GumroadCreators'
+import HelpingPeople from '../components/universityComp/HelpingPeople'
 
 
 const University = () => {
@@ -20,6 +21,7 @@ const University = () => {
      <GrowTogether/>
      <Starter/>
      <Review/>
+     <HelpingPeople/>
      <Advanced/>
      <Archive/>
      <GumroadCreators/>

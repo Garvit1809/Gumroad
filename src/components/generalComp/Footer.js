@@ -1,7 +1,31 @@
 import React from "react";
 import styled from "styled-components";
-import { Arrow, Facebook, Instagram, Pinterest, Twitter, Youtube } from "../generalComp/SVG";
+import {
+  Facebook,
+  Instagram,
+  Pinterest,
+  Twitter,
+  Youtube,
+} from "../generalComp/SVG";
 import GumroadG from "../../assets/GumroadG.svg";
+import arrow from "../../assets/ArrowSvg.svg";
+import Gumroad from "../../assets/GumroadFooterLogo.svg";
+
+const Header = styled.div`
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 6.5rem 0 0 4rem;
+  text-align: left;
+  background-color: #000;
+  color: #fff;
+  img {
+    width: 16vw;
+    max-width: 17.5rem;
+    min-width: 10rem;
+    stroke: #fff;
+    /* border: 1px solid red; */
+  }
+`;
 
 const Section = styled.div`
   background-color: #000;
@@ -16,8 +40,9 @@ const Subscribe = styled.div`
   color: #fff;
   text-align: left;
   margin-bottom: 5rem;
-
+  
   h1 {
+    /* border: 1px solid #fff; */
     font-size: 2.8rem;
     font-weight: 600;
     line-height: 1;
@@ -65,8 +90,8 @@ const Subscribe = styled.div`
       border-bottom-right-radius: 4px;
       background-color: rgb(255, 144, 232);
 
-      svg {
-        width: 1.5rem;
+      img {
+        width: 1.65rem;
       }
     }
   }
@@ -133,7 +158,7 @@ const Socials = styled.div`
     color: #fff;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       color: rgb(255, 114, 232);
     }
   }
@@ -141,48 +166,53 @@ const Socials = styled.div`
 
 const Footer = () => {
   return (
-    <Section>
-      <Subscribe>
-        <h1>
-          Subscribe to get tips and tactics to
-          <br />
-          grow the way you want.
-        </h1>
-        <form>
-          <input type="text" name="" placeholder="Your email address" />
-          <button>
-            <Arrow />
-          </button>
-        </form>
-      </Subscribe>
-      <Links>
-        <ul>
-          <li>Help</li>
-          <li>University</li>
-          <li>Blog</li>
-          <li>Terms of services</li>
-          <li>Privacy Policy</li>
-        </ul>
-        <ul>
-          <li>Feature</li>
-          <li>Pricing</li>
-          <li>Discover</li>
-          <li>Jobs</li>
-          <li>Roadmap</li>
-        </ul>
-      </Links>
-      <CopyRight>
-        <img src={GumroadG} alt="" />
-        <span>&copy; 2023 Gumroad, Inc.</span>
-      </CopyRight>
-      <Socials>
-        <Twitter />
-        <Youtube />
-        <Instagram />
-        <Facebook />
-        <Pinterest />
-      </Socials>
-    </Section>
+    <>
+      <Header>
+        <img src={Gumroad} alt="" />
+      </Header>
+      <Section>
+        <Subscribe>
+          <h1>
+            Subscribe to get tips and tactics to
+            <br />
+            grow the way you want.
+          </h1>
+          <form>
+            <input type="text" name="" placeholder="Your email address" />
+            <button>
+              <img src={arrow} alt="" />
+            </button>
+          </form>
+        </Subscribe>
+        <Links>
+          <ul>
+            <li>Help</li>
+            <li>University</li>
+            <li>Blog</li>
+            <li>Terms of services</li>
+            <li>Privacy Policy</li>
+          </ul>
+          <ul>
+            <li>Feature</li>
+            <li>Pricing</li>
+            <li>Discover</li>
+            <li>Jobs</li>
+            <li>Roadmap</li>
+          </ul>
+        </Links>
+        <CopyRight>
+          <img src={GumroadG} alt="" />
+          <span>&copy; 2023 Gumroad, Inc.</span>
+        </CopyRight>
+        <Socials>
+          <Twitter />
+          <Youtube />
+          <Instagram />
+          <Facebook />
+          <Pinterest />
+        </Socials>
+      </Section>
+    </>
   );
 };
 

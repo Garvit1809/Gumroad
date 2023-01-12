@@ -6,15 +6,25 @@ import creator3 from "../../assets/university/creator3.png";
 import creator4 from "../../assets/university/creator4.png";
 import creator5 from "../../assets/university/creator5.png";
 import creator6 from "../../assets/university/creator6.png";
+import arrow from "../../assets/ArrowSvg.svg";
 
-const Section = styled.div`
+const Section = styled.div``;
 
+const Header = styled.div`
+  padding-top: 4.5rem;
+  padding-bottom: 5rem;
+  h2 {
+    font-size: 2.75rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
 `;
-
-const Header = styled.div``;
 
 const Creators = styled.div`
   background-color: #000;
+  padding-top: 4vw;
+  padding-bottom: 7rem;
 `;
 
 const CreatorsGrid = styled.div`
@@ -77,8 +87,21 @@ const Details = styled.div`
   }
 
   strong {
-    font-size: 1.55rem;
-    font-weight: 600;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 1.55rem;
+      /* border: 1px solid red; */
+      font-weight: 600;
+    }
+
+    img {
+      width: 1.4rem;
+      margin-top: 0.4rem;
+      margin-left: 0.4rem;
+      /* border: 1px solid red; */
+    }
   }
 `;
 
@@ -140,7 +163,9 @@ const GumroadCreators = () => {
                     <h3>{creator.tagline}</h3>
                     <div>{creator.creator}</div>
                   </header>
-                  <strong>Read more</strong>
+                  <strong>
+                    <span>Read more</span> <img src={arrow} alt="" />
+                  </strong>
                 </Details>
               </Creator>
             );

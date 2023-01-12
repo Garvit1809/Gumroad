@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import YourStore from "../featuresComp/YourStore";
 
-import coin1 from "../../pricingImgs/coin1.svg";
-import coin2 from "../../pricingImgs/coin2.svg";
-import coin3 from "../../pricingImgs/coin3.svg";
-import coin4 from "../../pricingImgs/coin4.svg";
-import coin5 from "../../pricingImgs/coin5.svg";
-import coin6 from "../../pricingImgs/coin6.svg";
+import coin1 from "../../assets/pricingImgs/coin1.svg";
+import coin2 from "../../assets/pricingImgs/coin2.svg";
+import coin3 from "../../assets/pricingImgs/coin3.svg";
+import coin4 from "../../assets/pricingImgs/coin4.svg";
+import coin5 from "../../assets/pricingImgs/coin5.svg";
+import coin6 from "../../assets/pricingImgs/coin6.svg";
 
 const Section = styled.div`
   background-color: #ffc900;

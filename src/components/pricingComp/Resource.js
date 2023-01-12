@@ -1,17 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import arrow from '../../assets/ArrowSvg.svg'
+import arrow from "../../assets/ArrowSvg.svg";
 
 const Section = styled.div`
   width: 28.13vw;
-  /* width: 100%; */
   border: 2px solid #000;
   border-radius: 0.375rem;
   margin-top: 2rem;
   margin-right: 2.5rem;
   overflow: hidden;
-  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out,
-    -webkit-transform 200ms ease-in-out;
+  cursor: pointer;
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
 
   &:hover {
     box-shadow: 6px 6px 0 0 #000;
@@ -56,9 +55,8 @@ const Content = styled.div`
     font-weight: 600;
     display: flex;
     align-items: center;
-    /* justify-content: flex-start; */
 
-    img{
+    img {
       /* border: 1px solid red; */
       width: 1.2rem;
       margin-top: 0.5rem;
@@ -78,7 +76,9 @@ const Resource = ({ img, guide, desc }) => {
           <h3>{guide}</h3>
           <div>{desc}</div>
         </header>
-        <strong>Read more <img src={arrow} alt="" /> </strong>
+        <strong>
+          Read more <img src={arrow} alt="" />{" "}
+        </strong>
       </Content>
     </Section>
   );

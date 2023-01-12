@@ -52,7 +52,6 @@ const Header = styled.div`
   }
 `;
 
-
 const Resources = styled.div`
   /* border: 1px solid red; */
   padding: 0 4vw;
