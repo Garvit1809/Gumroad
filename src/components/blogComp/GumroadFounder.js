@@ -42,8 +42,36 @@ const RightContainer = styled.div`
   p,
   h2,
   div {
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     text-align: left;
+  }
+  
+  h2{
+    /* border: 1px solid #fff; */
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  
+  p.msg{
+    /* border: 1px solid #fff; */
+    font-size: 1.85rem;
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+
+    span{
+      text-decoration: underline;
+    }
+  }
+
+  p.date{
+     /* border: 1px solid #fff; */
+    font-size: 1.3rem;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -0.01em;
   }
 `;
 
@@ -55,6 +83,26 @@ const SahilBio = styled.div`
   grid-row-gap: 2rem;
   grid-template-columns: 7rem 1fr;
   grid-template-rows: auto;
+  /* border: 1px solid #fff; */
+
+  div {
+    p {
+      /* border: 1px solid #fff; */
+      font-size: 1.5rem;
+      line-height: 1;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+    }
+    
+    span {
+      /* border: 1px solid #fff; */
+      font-weight: 600;
+      line-height: 1;
+      font-size: 1.7rem;
+      display: block;
+      white-space: nowrap;
+    }
+  }
 `;
 
 const GumroadFounder = () => {
@@ -73,14 +121,14 @@ const GumroadFounder = () => {
           </div>
         </SahilBio>
         <h2>Betting on a new Gumroad</h2>
-        <p>
+        <p className="msg" >
           Gumroad is ten years old, but instead of just celebrating, we’re
           focusing on the next 10 years. I’ve been asking myself, and many
           others, which path Gumroad should take next to further support
-          creators. Read more about the bets we're placing — beginning with our
+          creators. <span>Read more</span> about the bets we're placing — beginning with our
           new brand.
         </p>
-        <p>November 26, 2021</p>
+        <p className="date" >November 26, 2021</p>
       </RightContainer>
     </Section>
   );
