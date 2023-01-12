@@ -1,4 +1,5 @@
 import React from 'react'
+import BlogGrid from '../components/blogComp/BlogGrid'
 import GumroadFounder from '../components/blogComp/GumroadFounder'
 import LatestNews from '../components/blogComp/LatestNews'
 import Footer from '../components/generalComp/Footer'
@@ -11,6 +12,7 @@ const Blog = () => {
         <Navbar/>
         <LatestNews/>
         <GumroadFounder/>
+        <BlogGrid/>
         <ShareWork/>
         <Footer/>
     </>

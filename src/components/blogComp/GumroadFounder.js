@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import sahil from "../../assets/blog/sahil.svg";
-import gum from './Gum.svg'
+import gum from "./Gum.svg";
 
 const Section = styled.div`
   display: grid;
@@ -16,9 +16,9 @@ const Section = styled.div`
 `;
 
 const ImageContainer = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const RightContainer = styled.div`
@@ -38,27 +38,31 @@ const RightContainer = styled.div`
   padding: 6.5vw;
   padding-left: 0;
   color: #fff;
+
+  p,
+  h2,
+  div {
+    border: 1px solid #fff;
+    text-align: left;
+  }
 `;
 
 const SahilBio = styled.div`
   display: grid;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   grid-auto-columns: 1fr;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
-  -ms-grid-columns: 7rem 1fr;
   grid-template-columns: 7rem 1fr;
-  -ms-grid-rows: auto;
   grid-template-rows: auto;
 `;
 
 const GumroadFounder = () => {
   return (
     <Section>
-      <ImageContainer><img src={gum} alt="" /></ImageContainer>
+      <ImageContainer>
+        <img src={gum} alt="" />
+      </ImageContainer>
       <RightContainer>
         <SahilBio>
           <img src={sahil} alt="" />
