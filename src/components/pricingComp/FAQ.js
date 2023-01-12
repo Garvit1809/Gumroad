@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { FAQData } from "./FAQData";
 import Question from "./Question";
@@ -37,19 +36,6 @@ const Questions = styled.div`
 
 
 const FAQ = () => {
-  const [showAnswer, setShowAnswer] = useState(100);
-
-  const collapseAnswer = (index) => {
-    console.log(index);
-    if (index === showAnswer) {
-      setShowAnswer(-1);
-    } else {
-      setShowAnswer(index);
-    }
-  };
-  useEffect(() => {
-    console.log(showAnswer);
-  }, [showAnswer]);
 
   return (
     <Section>
